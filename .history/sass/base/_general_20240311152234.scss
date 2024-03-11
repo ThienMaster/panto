@@ -1,0 +1,12 @@
+@use "../abstracts" as abst;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: abst.$font-primary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+}

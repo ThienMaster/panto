@@ -1,0 +1,82 @@
+@use "../../abstracts" as abst;
+
+.header {
+  color: #fff;
+  background-image: url("../images/background.png");
+  min-height: 1084px;
+  padding: 40px 80px;
+
+  &-top {
+    @include abst.flexBox(
+      ((align-items: center, justify-content: space-between))
+    );
+    margin-bottom: 92px;
+  }
+
+  &-menu {
+    @include abst.flexBox(((align-items: center, gap: 64px)));
+  }
+
+  &-logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+
+  &-menu {
+    &-item:first-child &-link {
+      @include abst.flexBox(((align-items: center, gap: 8px)));
+    }
+
+    &-link {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  &-heading {
+    font-size: 80px;
+    line-height: calc(104 / 80);
+    letter-spacing: -0.8px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &-caption {
+    margin: 14px auto 45px;
+    font-size: 24px;
+    line-height: calc(38.4 / 24);
+    opacity: 0.8;
+    width: 606px;
+    text-align: center;
+  }
+
+  &-search {
+    @include abst.flexBox(
+      ((align-items: center, justify-content: space-between))
+    );
+    padding: 8px 8px 8px 20px;
+    border-radius: 42px;
+    border: 0.862px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    width: 344px;
+
+    &-text {
+      font-size: 18px;
+      line-height: calc(27 / 18);
+      opacity: 0.8;
+    }
+
+    &-icon {
+      @include abst.size(40px);
+      border-radius: 100rem;
+      background-color: abst.$orange-e58;
+      @include abst.flexBox(((align-items: center)));
+    }
+  }
+}

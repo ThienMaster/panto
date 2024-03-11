@@ -1,0 +1,139 @@
+@use "../../abstracts" as abst;
+
+.header {
+  color: #fff;
+  background-image: url("../images/background.svg");
+  min-height: 1084px;
+  padding: 40px 80px;
+  position: relative;
+
+  &-top {
+    @include abst.flexBox(
+      ((align-items: center, justify-content: space-between))
+    );
+    margin-bottom: 86px;
+  }
+
+  &-logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+
+  &-menu {
+    @include abst.flexBox(((align-items: center, gap: 65px)));
+    margin-left: auto;
+
+    &-item:first-child &-link {
+      @include abst.flexBox(
+        ((align-items: flex-end, justify-content: center, gap: 8px))
+      );
+    }
+
+    &-link {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  &-card {
+    margin-left: 367px;
+    position: relative;
+
+    &-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      @include abst.size(20px, 25px);
+      border-radius: 100rem;
+      background-color: abst.$orange-e58;
+    }
+  }
+
+  &-union {
+    position: absolute;
+    left: 249px;
+    top: 585px;
+  }
+
+  &-group {
+    &-1 {
+      position: absolute;
+      left: 103px;
+      top: 743px;
+    }
+
+    &-2 {
+      position: absolute;
+      left: 277px;
+      top: 666.6px;
+    }
+
+    &-3 {
+      position: absolute;
+      left: 800px;
+      top: 777px;
+    }
+
+    &-4 {
+      position: absolute;
+      right: 34px;
+      top: 809px;
+    }
+  }
+
+  &-heading {
+    font-size: 80px;
+    line-height: calc(104 / 80);
+    letter-spacing: -0.8px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &-caption {
+    margin: 14px auto 45px;
+    font-size: 24px;
+    line-height: calc(38.4 / 24);
+    opacity: 0.8;
+    width: 606px;
+    text-align: center;
+  }
+
+  &-search {
+    @include abst.flexBox(
+      ((align-items: center, justify-content: space-between))
+    );
+    padding: 8px 8px 8px 20px;
+    border-radius: 42px;
+    border: 0.862px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    width: 344px;
+    margin: 0 auto;
+
+    &-text {
+      color: #fff;
+      font-size: 18px;
+      line-height: calc(27 / 18);
+      opacity: 0.8;
+
+      &::placeholder {
+        color: inherit;
+      }
+    }
+
+    &-icon {
+      @include abst.size(40px);
+      border-radius: 100rem;
+      background-color: abst.$orange-e58;
+      @include abst.flexBox(((align-items: center, justify-content: center)));
+    }
+  }
+}

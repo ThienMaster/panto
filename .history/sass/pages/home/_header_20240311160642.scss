@@ -1,0 +1,25 @@
+@use "../../abstracts" as abst;
+
+.header {
+  background-image: url("../images/background.png");
+  min-height: 1084px;
+  padding: 40px 80px;
+  color: #ff;
+
+  &-top {
+    @include abst.flexBox(
+      ((align-items: center, justify-content: space-between))
+    );
+  }
+
+  &-menu {
+    @include abst.flexBox(((align-items: center, gap: 64px)));
+  }
+
+  &-logo {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+}

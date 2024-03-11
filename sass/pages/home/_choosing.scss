@@ -1,0 +1,27 @@
+@use "../../abstracts" as abst;
+
+.choosing {
+  padding: 120px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 28px;
+
+  &-heading {
+    width: 242px;
+  }
+
+  &-title {
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 0.9;
+    line-height: normal;
+  }
+
+  &-caption {
+    width: 284px;
+    font-size: 16px;
+    line-height: calc(29.6 / 16);
+    opacity: 0.8;
+    margin-block: 20px 14px;
+  }
+}
