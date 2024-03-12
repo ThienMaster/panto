@@ -1,0 +1,99 @@
+@use "../../abstracts" as abst;
+
+.product {
+  padding: 50px 96px;
+
+  &-heading {
+    text-align: center;
+  }
+
+  &-type {
+    @include abst.flexBox(((align-items: center, gap: 7px)));
+    width: 348px;
+    background-color: #eee;
+    border-radius: 44px;
+    padding: 6px;
+    margin: 32px auto 80px;
+
+    &-ch,
+    &-be,
+    &-so,
+    &-la {
+      @include abst.size(84px, 45px);
+      @include abst.flexBox(((align-items: center, justify-content: center)));
+      padding: 4px;
+      font-size: 18px;
+      line-height: calc(33.3 / 18);
+      opacity: 0.8;
+      transition: 0.5s;
+      background-color: transparent;
+      border-radius: 32px;
+
+      &:hover {
+        background-color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    &-ch {
+      background-color: #fff;
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 42px;
+  }
+
+  &-item {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  &-image {
+    margin: 0 auto;
+    background-color: #fafafa;
+  }
+
+  &-info {
+    padding: 14px 22px 28px;
+    font-family: abst.$font-secondary;
+  }
+
+  &-caption {
+    color: #8d8d8d;
+    font-size: 16.755px;
+    line-height: normal;
+  }
+
+  &-title {
+    color: #0d1b39;
+    font-size: 21.325px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 6px 0;
+  }
+
+  &-star {
+    @include abst.flexBox(((align-items: center, gap: 3px)));
+    margin-bottom: 37px;
+  }
+
+  &-priceadd {
+    @include abst.flexBox(
+      ((align-items: center, justify-content: space-between))
+    );
+  }
+
+  &-price {
+    @include abst.flexBox(((align-items: center, gap: 3px)));
+    color: #0d1b39;
+  }
+
+  &-dollar {
+    display: block;
+    margin-bottom: 8px;
+  }
+}

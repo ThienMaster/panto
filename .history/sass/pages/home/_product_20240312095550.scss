@@ -1,0 +1,21 @@
+@use "../../abstracts" as abst;
+
+.product {
+  padding: 50px 96px;
+
+  &-heading {
+    text-align: center;
+  }
+
+  &-type {
+    @include abst.flexBox(((align-items: center, gap: 21px)));
+    width: 336px;
+    background-color: #eee;
+    border-radius: 44px;
+    padding: 6px;
+
+    & span {
+      display: block;
+    }
+  }
+}

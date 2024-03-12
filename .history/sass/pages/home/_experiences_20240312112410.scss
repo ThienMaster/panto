@@ -1,0 +1,11 @@
+@use "../../abstracts" as abst;
+
+.experiences {
+  margin-top: 240px;
+
+  &-wrapper {
+    @include abst.flexBox(
+      ((align-items: center, justify-content: space-between))
+    );
+  }
+}

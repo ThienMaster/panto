@@ -1,0 +1,38 @@
+@use "../../abstracts" as abst;
+
+.product {
+  padding: 50px 96px;
+
+  &-heading {
+    text-align: center;
+  }
+
+  &-type {
+    @include abst.flexBox(
+      ((align-items: center, justify-content: space-between))
+    );
+    width: 336px;
+    background-color: #eee;
+    border-radius: 44px;
+    padding: 6px;
+    margin: 0 auto;
+
+    &-ch,
+    &-be,
+    &-so,
+    &-la {
+      display: block;
+      font-size: 18px;
+      line-height: calc(33.3 / 18);
+      opacity: 0.8;
+    }
+
+    &-ch {
+      background-color: #fff;
+      border-radius: 32px;
+      padding: 4px;
+      @include abst.size(84px, 45px);
+      @include abst.flexBox(((align-items: center, justify-content: center)));
+    }
+  }
+}
