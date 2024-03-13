@@ -1,0 +1,7 @@
+@use "../../abstracts" as abst;
+
+.materials {
+  &-wrapper {
+    @include abst.flexBox(((align-items: center, gap: 94px)));
+  }
+}

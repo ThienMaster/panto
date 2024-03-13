@@ -1,0 +1,52 @@
+@use "../../abstracts" as abst;
+
+.materials {
+  &-wrapper {
+    @include abst.flexBox(
+      ((align-items: center, justify-content: space-between))
+    );
+  }
+
+  &-content {
+    padding-left: 80px;
+    width: 40%;
+  }
+
+  &-heading {
+    width: 413px;
+    padding: 20px 0;
+  }
+
+  &-caption {
+    font-size: 18px;
+    line-height: calc(33.3 / 18);
+    opacity: 0.8;
+    margin-bottom: 24px;
+    width: 556px;
+  }
+
+  &-image {
+    @include flexBox(((align-items: flex-end, gap: 32px))) &-left {
+      display: grid;
+      place-content: center;
+      row-gap: 26px;
+    }
+
+    &-right {
+      position: relative;
+    }
+
+    &-shadow {
+      position: absolute;
+      left: 37px;
+      top: 51px;
+      z-index: -2;
+    }
+
+    &-group {
+      position: absolute;
+      bottom: 90px;
+      z-index: -3;
+    }
+  }
+}

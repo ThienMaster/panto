@@ -1,0 +1,73 @@
+@use "../../abstracts" as abst;
+
+.testimonials {
+  margin-block: 240px 215px;
+
+  &-container {
+    text-align: center;
+  }
+
+  &-heading {
+    margin-block: 20px 60px;
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 39px;
+  }
+
+  &-item {
+    position: relative;
+  }
+
+  &-content {
+    @include abst.size(334px, 206px);
+    border-radius: 18.118px;
+    background-color: #fff;
+    backdrop-filter: blur(5.5px);
+    padding: 39px 40px 17px;
+    position: absolute;
+    bottom: 19px;
+    left: 17px;
+
+    &-image {
+      @include abst.size(66px);
+      background-color: #fff;
+      border-radius: 100rem;
+      position: absolute;
+      bottom: 173px;
+      left: 133px;
+
+      & img {
+        aspect-ratio: 1;
+        @include abst.imageCover;
+      }
+    }
+  }
+
+  &-name {
+    display: block;
+    margin-block: 8px 6px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &-place {
+    display: block;
+    font-size: 12px;
+    line-height: normal;
+    opacity: 0.6;
+  }
+
+  &-desc {
+    line-height: normal;
+    opacity: 0.8;
+    margin: 22px 0;
+  }
+
+  &-star {
+    margin: 0 auto;
+  }
+}

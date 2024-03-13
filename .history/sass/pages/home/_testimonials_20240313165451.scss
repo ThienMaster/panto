@@ -1,0 +1,9 @@
+@use "../../abstracts" as abst;
+
+.testimonials {
+  margin-block: 240px 215px;
+
+  &-container {
+    text-align: center;
+  }
+}
