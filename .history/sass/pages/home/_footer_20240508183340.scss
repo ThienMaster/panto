@@ -38,6 +38,20 @@
     margin-bottom: 20px;
   }
 
+  &-links {
+    @include abst.flexBox(((flex-direction: column, gap: 16px)));
+
+    & .footer-links-item:first-child {
+      img {
+        padding-left: 5px;
+      }
+
+      span {
+        padding-left: 6px;
+      }
+    }
+  }
+
   &-link {
     @include abst.flexBox(((align-items: center, gap: 16px)));
     color: abst.$black-1e;
@@ -45,5 +59,36 @@
     line-height: calc(24 / 15);
     font-weight: 500;
     opacity: 0.8;
+    transition: 0.5s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-bottom {
+    margin-top: 120px;
+    @include abst.flexBox(
+      ((align-items: center, justify-content: space-between))
+    );
+  }
+
+  &-copyright {
+    color: #1e2833;
+    font-family: abst.$font-third;
+    font-size: 15px;
+    line-height: normal;
+    letter-spacing: -0.205px;
+    opacity: 0.5;
+  }
+
+  &-right {
+    @include abst.flexBox(((align-items: center, gap: 40px)));
+
+    span {
+      font-size: 15px;
+      line-height: calc(24 / 15);
+      opacity: 0.8;
+    }
   }
 }

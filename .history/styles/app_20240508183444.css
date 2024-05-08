@@ -95,28 +95,32 @@ body {
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../../fonts/Gilroy-SemiBold.woff") format("woff");
+  src: url("../../fonts/Gilroy-SemiBold.woff2") format("woff2"),
+    url("../../fonts/Gilroy-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../../fonts/Gilroy-Bold.woff2") format("woff2"), url("../../fonts/Gilroy-Bold.woff") format("woff");
+  src: url("../../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../../fonts/Gilroy-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../../fonts/Gilroy-Regular.woff2") format("woff2"), url("../../fonts/Gilroy-Regular.woff") format("woff");
+  src: url("../../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../../fonts/Gilroy-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../../fonts/Gilroy-Medium.woff2") format("woff2"), url("../../fonts/Gilroy-Medium.woff") format("woff");
+  src: url("../../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../../fonts/Gilroy-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -290,7 +294,10 @@ body {
   padding: 6px;
   margin: 32px auto 80px;
 }
-.product-type-ch, .product-type-be, .product-type-so, .product-type-la {
+.product-type-ch,
+.product-type-be,
+.product-type-so,
+.product-type-la {
   width: 84px;
   height: 45px;
   display: flex;
@@ -304,7 +311,10 @@ body {
   background-color: transparent;
   border-radius: 32px;
 }
-.product-type-ch:hover, .product-type-be:hover, .product-type-so:hover, .product-type-la:hover {
+.product-type-ch:hover,
+.product-type-be:hover,
+.product-type-so:hover,
+.product-type-la:hover {
   background-color: #fff;
   cursor: pointer;
 }
@@ -388,7 +398,8 @@ body {
   justify-content: center;
   margin-top: 60px;
 }
-.product-arrow-left, .product-arrow-right {
+.product-arrow-left,
+.product-arrow-right {
   width: 50px;
   height: 50px;
   display: flex;
@@ -570,7 +581,8 @@ body {
   left: 0;
   z-index: -2;
 }
-.testimonials-arrow-left, .testimonials-arrow-right {
+.testimonials-arrow-left,
+.testimonials-arrow-right {
   width: 50px;
   height: 50px;
   display: flex;
